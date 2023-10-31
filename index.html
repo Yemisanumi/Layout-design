@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple layout design">
+    <meta name="author" content="Oluwayemi Sanumi">
+    <meta name="keyword" content="header, footer, middle, left, right">
+    <title>Layout design</title>
+    <style>
+        body {
+            height: 100vh;
+        }
+        header {
+            background-color: #D0454A;
+            height: 25%;
+        }
+        footer {
+            background-color: #D0454A;
+            height: 15%;
+        }
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        main {
+            display: flex;
+            height: 60%;
+        }
+        #left {
+            background-color: #C28282;
+            width: 20%;
+            float: left;   
+        }
+        #right {
+            background-color: #C28282;
+            width: 20%;
+            display: flex;
+            float: right;  
+        }
+        #middle {
+            background-color: #699EBD;
+            display: flex;
+            width: 100%;
+        }
+        .header-text {
+            display: flex;
+            justify-content: center;
+            color: white;
+            align-items: center;
+            height: 170px;
+        }
+        .left-text {
+            display: flex;
+            justify-content: center;
+            color: white;
+            align-items: center;
+            height: 380px;
+        }
+        .middle-text {
+            display: flex;
+            justify-content: space-around;
+            color: white;
+            align-items: center;
+            margin-left: 450px;
+            height: 380px;
+        }
+        .right-text {
+            display: flex;
+            justify-content: center;
+            color: white;
+            margin-left: 80px;
+            align-items: center;
+            height: 380px;
+        }
+        .footer-text {
+            display: flex;
+            justify-content: center;
+            color: white;
+            align-items: center;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p class="header-text">header</p>
+    </header>
+    <main>
+    <div id="left">
+        <p class="left-text">left</p>
+    </div>
+    <div id="middle">
+        <p class="middle-text">middle</p>
+    </div>
+    <div id="right">
+        <p class="right-text">right</p>
+    </div>
+    </main>
+    <footer>
+        <p class="footer-text">footer</p>
+    </footer>
+</body>
+</html>
